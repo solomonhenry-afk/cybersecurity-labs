@@ -1,0 +1,115 @@
+
+
+## 🔹 Executive Summary (Leadership / Non-Technical)
+
+**Lab 1: Vulnerability Discovery with Asset Context Enrichment**
+
+This assessment performed active vulnerability discovery against a scoped environment to identify exposed services and assess associated risk using both technical severity and business context.
+
+Multiple vulnerabilities were identified across host and application services; however, **risk prioritization was driven by asset criticality, exposure, and data sensitivity rather than CVSS alone**. Internet-facing services supporting business-critical functions were prioritized for remediation, while internally scoped or lab-only findings were documented and deprioritized as accepted risk.
+
+This approach mirrors real-world vulnerability management programs, where **reducing business risk—not vulnerability count—is the primary objective**.
+
+**Outcome:**
+The engagement successfully demonstrated end-to-end vulnerability discovery, contextual enrichment, and risk-based triage aligned with modern SOC and vulnerability management practices.
+
+---
+
+## 🔹 Analyst Findings (SOC / Vulnerability Analyst View)
+
+### 1. Discovery & Enumeration
+
+Active scanning was conducted using Nmap with service detection and vulnerability enumeration enabled.
+
+**Key activities performed:**
+
+* Service discovery using `-sV`
+* Vulnerability enumeration using `--script vuln`
+* Artifact capture using `-oN` for audit-ready evidence
+
+**Notable services discovered:**
+
+* OpenSSH (TCP/22)
+* Splunkd Management & Web Interfaces (TCP/8000, 8089)
+* HTTP services susceptible to Slowloris DoS (CVE-2007-6750)
+
+Exploit references and CVE mappings were identified via Vulners integration, providing immediate threat context.
+
+---
+
+### 2. Asset Context Enrichment
+
+Raw scan data was enriched with asset inventory metadata to support risk-based decision-making.
+
+**Contextual attributes applied:**
+
+* Business unit ownership
+* Asset criticality
+* Data sensitivity classification
+* Network exposure (internet-facing vs internal)
+
+This enrichment enabled differentiation between **technical severity** and **true organizational risk**, preventing over-escalation of low-impact findings.
+
+---
+
+### 3. Risk-Based Triage & Prioritization
+
+Findings were triaged using a combination of:
+
+* Vulnerability severity
+* Asset criticality
+* Exposure level
+* Potential business impact
+
+**High-risk findings prioritized:**
+
+* Internet-facing services on high-criticality assets
+* Services with known exploit references and availability impact
+
+**Deprioritized / Accepted Risk:**
+
+* Slowloris DoS identified on localhost-only services
+  *Rationale:* Non-production, lab-scoped exposure with no external attack surface.
+
+This reflects standard SOC and vulnerability governance workflows, where **context determines actionability**.
+
+---
+
+### 4. Analyst Judgment & Decision-Making
+
+Rather than treating all vulnerabilities equally, analyst judgment was applied to:
+
+* Identify findings requiring escalation
+* Document accepted risk with justification
+* Preserve evidence for audit and review
+
+This demonstrates maturity beyond tool execution and aligns with how senior analysts operate in enterprise environments.
+
+---
+
+## 🔹 Final Assessment
+
+**This lab demonstrates proficiency in:**
+
+* Vulnerability discovery & enumeration
+* Asset inventory correlation
+* Risk-based vulnerability prioritization
+* Evidence handling & documentation
+* GitHub-based delivery and traceability
+
+**This is not a scan-and-dump exercise.**
+It reflects real SOC and consulting workflows used to inform remediation decisions and reduce organizational risk.
+
+---
+
+## 🔹 (HIGH-IMPACT) Add-On
+
+> *“This assessment prioritized vulnerabilities based on business risk and exposure, ensuring remediation efforts focused on assets most likely to impact organizational operations.”*
+
+---
+
+### Status Check
+
+* Evidence: ✅ Clean
+* Narrative: ✅ Strong
+* Repo Story: ✅ Clear
