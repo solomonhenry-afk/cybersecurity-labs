@@ -1,0 +1,8 @@
+2025-01-12T03:14:22Z client=10.0.4.21 query=ajd92kslqz.bad-domain.net type=A
+2025-01-12T03:14:32Z client=10.0.4.21 query=ajd92kslqz.bad-domain.net type=A
+2025-01-12T03:14:42Z client=10.0.4.21 query=ajd92kslqz.bad-domain.net type=A
+2025-01-12T03:14:52Z client=10.0.4.21 query=ajd92kslqz.bad-domain.net type=A
+2025-01-12T03:15:02Z client=10.0.4.21 query=ajd92kslqz.bad-domain.net type=A
+
+2025-01-12T09:11:07Z client=10.0.8.12 query=google.com type=A
+2025-01-12T09:11:08Z client=10.0.8.12 query=github.com type=A
