@@ -2,6 +2,23 @@
 
 This repository contains enterprise-aligned cybersecurity labs mapped to real-world job roles including vulnerability management, cloud security, IAM, SOC automation, and GRC.
 
+---
+
+## 🧪 Project 2: Cloud-Native Security Engineering (Azure · IAM · Kubernetes)
+
+A hands-on cloud security engineering project focused on **real-world misconfigurations, attack paths, and detection workflows** across Infrastructure-as-Code, Identity, and Kubernetes.
+
+### Labs
+- **Lab 1:** Insecure Terraform Deployment (Azure Storage + AKS)
+- **Lab 2:** Entra ID & Azure RBAC Misconfiguration
+- **Lab 3:** Kubernetes Baseline Security Assessment
+- **Lab 4:** Kubernetes Runtime Threat Detection *(in progress)*
+- **Lab 5:** CNAPP Risk Correlation (IaC + IAM + K8s)
+
+📁 Project Repository:  
+[`labs/project-02-cloud-native-security`](labs/project-02-cloud-native-security)
+
+
 ## Lab 1: Vulnerability Discovery with Asset Context Enrichment
 - Tooling: Nmap, OpenVAS/Nessus (simulated), CVE analysis
 - Focus: Asset context, risk prioritization, remediation strategy
