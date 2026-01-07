@@ -1,0 +1,35 @@
+{
+  "attack_path_id": "MDC-AP-CRITICAL-001",
+  "defender_products": [
+    "Microsoft Defender for Cloud",
+    "Defender for Containers",
+    "Defender for Resource Manager"
+  ],
+  "initial_exposure": {
+    "defender_alert": "Publicly accessible Azure Storage container",
+    "control_plane": "CSPM",
+    "resource": "Microsoft.Storage/storageAccounts",
+    "risk_level": "High"
+  },
+  "identity_escalation": {
+    "defender_feature": "Permissions Management (CIEM)",
+    "principal": "Entra ID Application",
+    "issue": "Contributor role at subscription scope",
+    "attack_technique": "Privilege escalation via over-permissioned identity"
+  },
+  "compute_compromise": {
+    "defender_workload": "Defender for Containers",
+    "resource": "Azure Kubernetes Service",
+    "misconfigurations": [
+      "Public AKS API endpoint",
+      "Insecure pod security context"
+    ],
+    "runtime_signal": "Container exec detected from suspicious source"
+  },
+  "correlated_impact": {
+    "data_exfiltration_risk": true,
+    "cluster_compromise": true,
+    "subscription_scope_impact": true
+  },
+  "defender_severity": "Critical"
+}

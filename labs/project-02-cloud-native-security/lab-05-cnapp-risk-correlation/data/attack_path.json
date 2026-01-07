@@ -1,0 +1,24 @@
+{
+  "attack_path_id": "CNAPP-AP-001",
+  "entry_point": {
+    "type": "Public Cloud Exposure",
+    "resource": "Azure Storage Account",
+    "issue": "Public blob container access"
+  },
+  "identity_layer": {
+    "principal": "Entra ID Application",
+    "misconfiguration": "Contributor role at subscription scope",
+    "risk": "Privilege escalation"
+  },
+  "compute_layer": {
+    "platform": "AKS",
+    "issue": "Public API endpoint + insecure pod spec",
+    "runtime_signal": "Suspicious exec into container"
+  },
+  "impact": {
+    "data_exposure": true,
+    "cluster_compromise": true,
+    "blast_radius": "Subscription-wide"
+  },
+  "severity": "Critical"
+}
