@@ -1,0 +1,4 @@
+timestamp,user,data_type,source,destination,action,justification
+2025-02-10,jdoe,PII,Email,External Gmail,Blocked,Policy violation
+2025-02-11,asmith,PHI,Endpoint,USB,Blocked,High regulatory risk
+2025-02-12,mlee,Internal Docs,SharePoint,OneDrive,Alerted,Low sensitivity
