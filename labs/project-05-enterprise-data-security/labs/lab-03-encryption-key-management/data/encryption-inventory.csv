@@ -1,0 +1,5 @@
+dataset,system,encryption_at_rest,encryption_in_transit,key_management,rotation_interval,compliance_impact
+Customer_PII,PostgreSQL_DB,Yes,Yes,KMS,90_days,GDPR_High
+Health_Records,SaaS_App,Yes,Yes,Vendor_KMS,180_days,HIPAA_High
+Financial_Reports,Cloud_Storage,Yes,Partial,KMS,90_days,SOX_Medium
+Backups,Snapshot_Storage,Partial,No,KMS,180_days,High
