@@ -1,0 +1,5 @@
+dataset_id,system,location,data_type,owner,exposure_level
+DS-001,CRM,SaaS,PII,Sales,Medium
+DS-002,HR-Database,On-Prem,PHI,HR,Low
+DS-003,Cloud-Storage,Public Cloud,Financial,Finance,High
+DS-004,Collaboration-Tool,SaaS,PII,Unknown,High

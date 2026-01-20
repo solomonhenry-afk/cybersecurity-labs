@@ -1,0 +1,5 @@
+dataset_id,classification,regulatory_scope,required_controls,risk_level
+DS-001,Confidential,GDPR,Access Control + Encryption,Medium
+DS-002,Restricted,HIPAA,Encryption + Audit Logging,Low
+DS-003,Restricted,SOX,Encryption + Monitoring,High
+DS-004,Restricted,GDPR,DLP + Access Review,High
