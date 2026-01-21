@@ -1,0 +1,6 @@
+scenario,data_type,encrypted,regulation,notification_required,impact_level
+Cloud storage misconfiguration,PII,No,GDPR,Yes,Severe
+Lost encrypted laptop,PHI,Yes,HIPAA,No,Low
+Insider email exfiltration,PII,No,GDPR,Yes,High
+Database access attempt blocked,PII,Yes,GDPR,No,Minimal
+Backup exposure with encryption,PHI,Yes,HIPAA,No,Low
