@@ -1,0 +1,10 @@
+title: Data Exfiltration Pattern
+description: Identifies abnormal outbound data transfers
+logsource:
+  category: network
+detection:
+  selection:
+    outbound_volume: high
+    destination_reputation: unknown
+  condition: selection
+level: critical

@@ -1,0 +1,9 @@
+[
+  {
+    "user": "jsmith",
+    "event": "login_success",
+    "geo": "unusual",
+    "device": "unmanaged",
+    "timestamp": "2026-01-22T10:32:00Z"
+  }
+]

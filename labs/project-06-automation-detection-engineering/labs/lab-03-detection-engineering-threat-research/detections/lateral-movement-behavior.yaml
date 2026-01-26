@@ -1,0 +1,10 @@
+title: Lateral Movement Behavior
+description: Detects abnormal access patterns across hosts
+logsource:
+  category: network
+detection:
+  selection:
+    multiple_hosts: true
+    short_timeframe: true
+  condition: selection
+level: high

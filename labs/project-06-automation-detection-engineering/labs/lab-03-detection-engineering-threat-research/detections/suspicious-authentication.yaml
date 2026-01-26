@@ -1,0 +1,10 @@
+title: Suspicious Authentication Behavior
+description: Detects authentication anomalies indicative of credential misuse
+logsource:
+  category: authentication
+detection:
+  selection:
+    geo_anomaly: true
+    device_trust: low
+  condition: selection
+level: high
