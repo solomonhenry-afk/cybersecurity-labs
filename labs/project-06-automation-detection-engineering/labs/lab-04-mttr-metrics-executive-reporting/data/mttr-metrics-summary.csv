@@ -1,0 +1,4 @@
+metric,before,after,improvement_percent
+Average MTTR (hours),4.8,1.6,66
+Analyst Touchpoints,7,3,57
+Containment Delay (minutes),55,12,78

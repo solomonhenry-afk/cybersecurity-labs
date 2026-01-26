@@ -1,0 +1,4 @@
+incident_id,detect_time,contain_time,mttr_hours
+INC-101,09:10,10:30,1.3
+INC-102,11:30,13:00,1.5
+INC-103,15:20,16:50,1.5
